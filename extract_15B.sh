@@ -15,7 +15,7 @@ source ~/.bashrc
 conda activate esm2
 
 
-study_names=("lc" "hc")
+study_names=("hc")
 
 model_names=("esm2_t48_15B_UR50D")
 fasta_path="./"
