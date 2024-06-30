@@ -2,7 +2,7 @@
 This is the official code base for PLM based active learning model to perform in silicon protein engineering (Jiang et al 2024)
 
 # User Instruction
-There are two anaconda environments to download and three executable files to run in sequences for evolving any protein sequences by putting in the folder a fasta file carrying the WT protein sequences. 
+There are two anaconda environments (esm2.yml and embedding.yml) to download and three executable files to run in sequences for evolving any protein sequences by putting in the folder a fasta file carrying the WT protein sequences. 
 1. Upload protein fasta files to the folder.
 2. Run extract_15B.sh by changing the name of the input to the target fasta file and this will generate raw embeddings (ESM2-15B) for the target protein.
 3. Run concatenate.sh which automatically aggregates the embeddings for each mutant to a single csv file in the results folder.
