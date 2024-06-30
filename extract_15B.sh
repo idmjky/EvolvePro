@@ -14,7 +14,7 @@
 source ~/.bashrc
 conda activate esm2
 
-
+# here you can specify different fasta file names to generate embeddings for different proteins. 
 study_names=("hc")
 
 model_names=("esm2_t48_15B_UR50D")
