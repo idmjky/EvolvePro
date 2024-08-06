@@ -360,5 +360,8 @@ df_test, df_all = top_layer(
     final_round=final_round
 )
 
-df_all.to_csv('prediction/round1_all_new.csv', index=False)
+#df_all.to_csv('prediction/round1_all_new.csv', index=False)
+df_all = df_all[df_all['y_actual'].isna()][['variant', 'y_pred']]
+df_all = df_all.sort_values(by=['y_pred'], ascending=False)
+df_all.to_csv('prediction/round1_prediction.csv', index=False)
 
